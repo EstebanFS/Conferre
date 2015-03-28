@@ -1,0 +1,60 @@
+lugar
+0
+Edificio 1
+20
+Calle 1
+false
+lugar
+1
+Edificio 12
+21
+Calle 12
+false
+lugar
+2
+Edificio 123
+22
+Calle 123
+false
+lugar
+3
+Edificio 1234
+23
+Calle 1234
+false
+lugar
+4
+Edificio 12345
+24
+Calle 12345
+false
+lugar
+5
+Edificio 123456
+25
+Calle 123456
+false
+lugar
+6
+Edificio 1234567
+26
+Calle 1234567
+false
+lugar
+7
+Edificio 12345678
+27
+Calle 12345678
+false
+lugar
+8
+Edificio 123456789
+28
+Calle 123456789
+false
+lugar
+9
+Edificio 12345678910
+29
+Calle 12345678910
+false
