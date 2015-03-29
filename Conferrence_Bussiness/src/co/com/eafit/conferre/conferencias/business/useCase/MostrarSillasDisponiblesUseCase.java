@@ -4,31 +4,29 @@ import java.util.ArrayList;
 
 import co.com.eafit.conferre.conferencias.business.base.UnitOfWork;
 import co.com.eafit.conferre.conferencias.data.base.FabricaDAO;
-import co.com.eafit.conferre.conferencias.data.base.ObjetoTO;
 import co.com.eafit.conferre.conferencias.data.dac.SillaDAO;
-import co.com.eafit.conferre.conferencias.data.to.SillaTO;
-import co.com.eafit.conferre.soporte.ExcepcionTransferenciaDAO;
-import co.com.eafit.conferre.soporte.ExcepcionValidacion;
+import co.com.eafit.conferre.soporte.base.ObjetoTO;
+import co.com.eafit.conferre.soporte.excepcion.ExcepcionTransferenciaDAO;
+import co.com.eafit.conferre.soporte.excepcion.ExcepcionValidacion;
+import co.com.eafit.conferre.soporte.to.EventoTO;
+import co.com.eafit.conferre.soporte.to.SillaTO;
 
 public class MostrarSillasDisponiblesUseCase implements UnitOfWork {
 	@Override
 	public ObjetoTO ejecutar(ObjetoTO param) throws ExcepcionValidacion, ClassNotFoundException, InstantiationException, IllegalAccessException, ExcepcionTransferenciaDAO {
-		SillaTO silla = (SillaTO) param;
-		validar(silla);
-		SillaTO result = null;
-		SillaDAO sillaDAO = FabricaDAO.createSillaDAO();
-		result = (SillaTO)sillaDAO.recuperarSilla(silla);
-		return result;
+		return null;
 	}
 
 	@Override
 	public void validar(ObjetoTO param) throws ExcepcionValidacion {
-		if(((SillaTO)param).getId() == null) throw new ExcepcionValidacion("El id de la silla no puede ser nulo");
+		if(((SillaTO)param).getIdEspacio() == null) throw new ExcepcionValidacion("El id del espacio no puede ser nulo");
 	}
 	
 	//Este metodo devuelve todas las sillas del espacio
 	public ArrayList<ObjetoTO> elegirTodasLasSillas(ObjetoTO param) throws ClassNotFoundException, InstantiationException, IllegalAccessException, ExcepcionValidacion, ExcepcionTransferenciaDAO{
-		SillaTO silla = (SillaTO) param;
+		EventoTO evento = (EventoTO) param;
+		SillaTO silla = new SillaTO();
+		silla.setIdEspacio(evento.getId_espacio());
 		validar(silla);
 		ArrayList<ObjetoTO> result = null;
 		SillaDAO sillaDAO = FabricaDAO.createSillaDAO();

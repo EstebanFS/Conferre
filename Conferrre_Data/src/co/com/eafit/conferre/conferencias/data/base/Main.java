@@ -11,12 +11,12 @@ import co.com.eafit.conferre.conferencias.data.dac.ClienteDAO;
 import co.com.eafit.conferre.conferencias.data.dac.ConferenciaDAO;
 import co.com.eafit.conferre.conferencias.data.dac.EventoDAO;
 import co.com.eafit.conferre.conferencias.data.dac.SillaDAO;
-import co.com.eafit.conferre.conferencias.data.to.AsistenteTO;
-import co.com.eafit.conferre.conferencias.data.to.ClienteTO;
-import co.com.eafit.conferre.conferencias.data.to.ConferenciaTO;
-import co.com.eafit.conferre.conferencias.data.to.EspacioTO;
-import co.com.eafit.conferre.conferencias.data.to.EventoTO;
-import co.com.eafit.conferre.conferencias.data.to.SillaTO;
+import co.com.eafit.conferre.soporte.to.AsistenteTO;
+import co.com.eafit.conferre.soporte.to.ClienteTO;
+import co.com.eafit.conferre.soporte.to.ConferenciaTO;
+import co.com.eafit.conferre.soporte.to.EspacioTO;
+import co.com.eafit.conferre.soporte.to.EventoTO;
+import co.com.eafit.conferre.soporte.to.SillaTO;
 
 public class Main {
 

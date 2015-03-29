@@ -2,7 +2,8 @@ package co.com.eafit.conferre.conferencias.data.base;
 
 import java.util.List;
 
-import co.com.eafit.conferre.soporte.ExcepcionTransferenciaDAO;
+import co.com.eafit.conferre.soporte.base.ObjetoTO;
+import co.com.eafit.conferre.soporte.excepcion.ExcepcionTransferenciaDAO;
 
 public interface DAOGenerico {
 

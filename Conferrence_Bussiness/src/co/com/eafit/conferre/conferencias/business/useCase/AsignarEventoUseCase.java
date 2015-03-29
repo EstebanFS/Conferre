@@ -4,15 +4,16 @@ import java.util.UUID;
 
 import co.com.eafit.conferre.conferencias.business.base.UnitOfWork;
 import co.com.eafit.conferre.conferencias.data.base.FabricaDAO;
-import co.com.eafit.conferre.conferencias.data.base.ObjetoTO;
 import co.com.eafit.conferre.conferencias.data.dac.ConferenciaEventoDAO;
 import co.com.eafit.conferre.conferencias.data.dac.EventoDAO;
 import co.com.eafit.conferre.conferencias.data.dac.EventoEspacioDAO;
-import co.com.eafit.conferre.conferencias.data.to.ConferenciaEventoTO;
-import co.com.eafit.conferre.conferencias.data.to.EventoEspacioTO;
-import co.com.eafit.conferre.conferencias.data.to.EventoTO;
-import co.com.eafit.conferre.soporte.ExcepcionTransferenciaDAO;
-import co.com.eafit.conferre.soporte.ExcepcionValidacion;
+import co.com.eafit.conferre.soporte.base.ObjetoTO;
+import co.com.eafit.conferre.soporte.excepcion.ExcepcionTransferenciaDAO;
+import co.com.eafit.conferre.soporte.excepcion.ExcepcionUnitOfWork;
+import co.com.eafit.conferre.soporte.excepcion.ExcepcionValidacion;
+import co.com.eafit.conferre.soporte.to.ConferenciaEventoTO;
+import co.com.eafit.conferre.soporte.to.EventoEspacioTO;
+import co.com.eafit.conferre.soporte.to.EventoTO;
 
 public class AsignarEventoUseCase implements UnitOfWork{
 	@Override
@@ -41,5 +42,4 @@ public class AsignarEventoUseCase implements UnitOfWork{
 	public void validar(ObjetoTO param) throws ExcepcionValidacion {
 		if(((EventoTO)param).getNombre() == null) throw new ExcepcionValidacion("El nombre del evento no puede ser nulo");	
 	}
-
 }

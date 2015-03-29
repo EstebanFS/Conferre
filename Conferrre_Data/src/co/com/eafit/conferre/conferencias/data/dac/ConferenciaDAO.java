@@ -9,9 +9,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import co.com.eafit.conferre.conferencias.data.base.DAOGenerico;
-import co.com.eafit.conferre.conferencias.data.base.ObjetoTO;
-import co.com.eafit.conferre.conferencias.data.to.ConferenciaTO;
-import co.com.eafit.conferre.soporte.ExcepcionTransferenciaDAO;
+import co.com.eafit.conferre.soporte.base.ObjetoTO;
+import co.com.eafit.conferre.soporte.excepcion.ExcepcionTransferenciaDAO;
+import co.com.eafit.conferre.soporte.to.ConferenciaTO;
 
 public class ConferenciaDAO implements DAOGenerico {
 

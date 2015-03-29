@@ -2,10 +2,10 @@ package co.com.eafit.conferre.conferencias.business.useCase;
 
 import co.com.eafit.conferre.conferencias.business.base.UnitOfWork;
 import co.com.eafit.conferre.conferencias.data.base.FabricaDAO;
-import co.com.eafit.conferre.conferencias.data.base.ObjetoTO;
 import co.com.eafit.conferre.conferencias.data.dac.ApiTransferenciaDAO;
-import co.com.eafit.conferre.conferencias.data.to.TransferenciaTO;
-import co.com.eafit.conferre.soporte.ExcepcionValidacion;
+import co.com.eafit.conferre.soporte.base.ObjetoTO;
+import co.com.eafit.conferre.soporte.excepcion.ExcepcionValidacion;
+import co.com.eafit.conferre.soporte.to.TransferenciaTO;
 
 public class PagarUseCase implements UnitOfWork {
 

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import co.com.eafit.conferre.conferencias.data.to.EspacioTO;
+import co.com.eafit.conferre.soporte.to.EspacioTO;
 
 public class ArchivoPlanoDAO {
 	

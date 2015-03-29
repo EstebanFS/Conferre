@@ -9,10 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import co.com.eafit.conferre.conferencias.data.base.DAOGenerico;
-import co.com.eafit.conferre.conferencias.data.base.ObjetoTO;
-import co.com.eafit.conferre.conferencias.data.to.EspacioTO;
-import co.com.eafit.conferre.conferencias.data.to.EventoTO;
-import co.com.eafit.conferre.soporte.ExcepcionTransferenciaDAO;
+import co.com.eafit.conferre.soporte.base.ObjetoTO;
+import co.com.eafit.conferre.soporte.excepcion.ExcepcionTransferenciaDAO;
+import co.com.eafit.conferre.soporte.to.EspacioTO;
+import co.com.eafit.conferre.soporte.to.EventoTO;
 
 public class EventoDAO implements DAOGenerico {
 	
