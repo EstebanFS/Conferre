@@ -46,5 +46,16 @@ public class Sillas {
 	public void setReservado(boolean reservado) {
 		this.reservado = reservado;
 	}
-
+	public String elegirSilla() {//throws ClassNotFoundException, InstantiationException, IllegalAccessException, ExceptionMiddleware, ExcepcionUnitOfWork, ExcepcionValidacion, ExcepcionTransferenciaDAO{
+		//JSONObject silla = new JSONObject();
+		//RestConferenciaFachade fachada = new RestConferenciaFachade();
+		//fachada.elegirSillasDisponibles(silla);
+		return("menuView");
+	}
+	public String mostrarSillas() {//throws ClassNotFoundException, InstantiationException, IllegalAccessException, ExceptionMiddleware, ExcepcionUnitOfWork, ExcepcionValidacion, ExcepcionTransferenciaDAO{
+		//JSONObject evento = new JSONObject();
+		//RestConferenciaFachade fachada = new RestConferenciaFachade();
+		//fachada.mostrarSillasDisponibles(evento);
+		return("menuView");
+	}
 }

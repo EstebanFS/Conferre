@@ -20,5 +20,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/Conferre_Business"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Conferre_Support"/>
+	<classpathentry kind="lib" path="G:/Dropbox/Carpetas Compartidas/Conferrence_Bussiness/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

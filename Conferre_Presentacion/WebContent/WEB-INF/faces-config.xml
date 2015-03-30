@@ -29,6 +29,16 @@
 		<managed-bean-class>co.com.eafit.conferre.presentacion.model.Sillas</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>conferenciaController</managed-bean-name>
+		<managed-bean-class>ConferenciaController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>pago</managed-bean-name>
+		<managed-bean-class>co.com.eafit.conferre.presentacion.model.Pago</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
   <!--  Empty for now. There are many uses for faces-config.xml, but
         the most common are navigation rules (instead of having
         the return value of the "action" method be the base filename),

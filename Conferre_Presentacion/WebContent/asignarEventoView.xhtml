@@ -15,12 +15,20 @@
 <h2>Bienvenido a Conferre</h2>
 </p>
 <h:form>
-	<h:outputLabel for="usernameText" value="UserName" />
-	<p:inputText id="userName" required="true" value="#{usuario.nombre}"/><br/>
-	<h:outputLabel for="cedulaText" value="Cedula" />
-	<p:inputText id="cedula" required="true" value="#{usuario.cedula}"/><br/>
+	<h:outputLabel for="nombreText" value="Nombre" />
+	<p:inputText id="nombre" required="true" value="#{evento.nombre}"/><br/>
+	<h:outputLabel for="descripcionText" value="Descripcion" />
+	<p:inputText id="descripcion" required="true" value="#{evento.descripcion}"/><br/>
+	<h:outputLabel for="idEspacioText" value="Id Espacio" />
+	<p:inputText id="idEspacioText" required="true" value="#{evento.idEspacio}"/><br/>
+	<h:outputLabel for="idConferenciaText" value="Id conferencia" />
+	<p:inputText id="idConferencia" required="true" value="#{evento.idConferencia}"/><br/>
+	<h:outputLabel for="fechaText" value="Fecha" />
+	<p:inputText id="fecha" required="true"/><br/>
 	<b></b><p:commandButton action="#{controllerViews.sendToMenuView}" 
-	                 value="Submit" ajax="false" />
+	                 value="Retroceder" ajax="false" />
+	<b></b><p:commandButton action="#{evento.asignarEvento}" 
+	                 value="Asignar" ajax="false" />
 </h:form>
 </p:fieldset>
 </div>

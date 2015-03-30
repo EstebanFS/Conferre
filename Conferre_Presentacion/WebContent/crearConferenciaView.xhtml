@@ -15,12 +15,24 @@
 <h2>Bienvenido a Conferre</h2>
 </p>
 <h:form>
-	<h:outputLabel for="usernameText" value="UserName" />
-	<p:inputText id="userName" required="true" value="#{usuario.nombre}"/><br/>
-	<h:outputLabel for="cedulaText" value="Cedula" />
-	<p:inputText id="cedula" required="true" value="#{usuario.cedula}"/><br/>
+	<h:outputLabel for="nombreText" value="Nombre" />
+	<p:inputText id="nombre" required="true" value="#{conferencia.nombre}"/><br/>
+	<h:outputLabel for="nombreConferencista" value="Nombre conferencista" />
+	<p:inputText id="nombreConferenciasta" required="true" value="#{conferencia.nombreConferencista}"/><br/>
+	<h:outputLabel for="idClienteText" value="Id cliente" />
+	<p:inputText id="idClienteText" required="true" value="#{conferencia.idCliente}"/><br/>
+	<h:outputLabel for="tipoText" value="Tipo" />
+	<p:inputText id="tipo" required="true" value="#{conferencia.tipo}"/><br/>
+	<h:outputLabel for="fechaText" value="Fecha" />
+	<p:inputText id="fecha" required="true"/><br/>
+	<h:outputLabel for="sillasDisponibles" value="Sillas Disponibles" />
+	<p:inputText id="sillasDisponibles" required="true" value="#{conferencia.sillasDisponibles}"/><br/>
+	<h:outputLabel for="descripcion" value="Descripcion" />
+	<p:inputText id="descripcion" required="true" value="#{conferencia.descripcion}"/><br/>
 	<b></b><p:commandButton action="#{controllerViews.sendToMenuView}" 
-	                 value="Submit" ajax="false" />
+	                 value="Retroceder" ajax="false" />
+	<b></b><p:commandButton action="#{conferencia.crearConferencia}" 
+	                 value="Crear" ajax="false" />
 </h:form>
 </p:fieldset>
 </div>

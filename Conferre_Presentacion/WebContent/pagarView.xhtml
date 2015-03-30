@@ -10,17 +10,19 @@
 <div align="center">
 <h1 class="ui-widget-header ui-corner-all" align="center">Pagar</h1>
 <br/>
-<p:fieldset legend="Cuentanos quien eres">  <!-- p:fieldset is not required, but is good because it gives legend that uses current PrimeFaces theme -->
+<p:fieldset legend="">  <!-- p:fieldset is not required, but is good because it gives legend that uses current PrimeFaces theme -->
 <p>
 <h2>Bienvenido a Conferre</h2>
 </p>
 <h:form>
-	<h:outputLabel for="usernameText" value="UserName" />
-	<p:inputText id="userName" required="true" value="#{usuario.nombre}"/><br/>
-	<h:outputLabel for="cedulaText" value="Cedula" />
-	<p:inputText id="cedula" required="true" value="#{usuario.cedula}"/><br/>
+	<h:outputLabel for="valorText" value="Valor" />
+	<p:inputText id="valor" required="true" value="#{pago.valor}"/><br/>
+	<h:outputLabel for="bancoText" value="Banco" />
+	<p:inputText id="banco" required="true" value="#{pago.banco}"/><br/>
 	<b></b><p:commandButton action="#{controllerViews.sendToMenuView}" 
-	                 value="Submit" ajax="false" />
+	                 value="Retroceder" ajax="false" />
+	<b></b><p:commandButton action="#{pago.generarPago}" 
+	                 value="Generar Pago" ajax="false" />
 </h:form>
 </p:fieldset>
 </div>

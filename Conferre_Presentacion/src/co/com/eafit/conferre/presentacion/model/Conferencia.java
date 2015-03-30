@@ -4,8 +4,17 @@ import java.util.Date;
 
 import javax.faces.bean.ManagedBean;
 
+
+
+//import org.json.simple.JSONObject;
+//import co.com.eafit.conferre.conferencias.business.middleware.RestConferenciaFachade;
+//import co.com.eafit.conferre.soporte.excepcion.ExcepcionTransferenciaDAO;
+//import co.com.eafit.conferre.soporte.excepcion.ExcepcionUnitOfWork;
+//import co.com.eafit.conferre.soporte.excepcion.ExcepcionValidacion;
+//import co.com.eafit.conferre.soporte.excepcion.ExceptionMiddleware;
+
 @ManagedBean
-public class Conferencia {
+public class Conferencia{
 	private String id;
 	private int idCliente;
 	private String nombre;
@@ -61,6 +70,20 @@ public class Conferencia {
 	}
 	public void setSillasDisponibles(int sillasDisponibles) {
 		this.sillasDisponibles = sillasDisponibles;
+	}
+	
+	public String crearConferencia() {//throws ClassNotFoundException, InstantiationException, IllegalAccessException, ExceptionMiddleware, ExcepcionUnitOfWork, ExcepcionValidacion, ExcepcionTransferenciaDAO{
+		//JSONObject conferencia = new JSONObject();
+		//RestConferenciaFachade fachada = new RestConferenciaFachade();
+		//fachada.crearConferencia(conferencia);
+		return("menuView");
+	}
+	
+	public String buscarConferencia() {//throws ClassNotFoundException, InstantiationException, IllegalAccessException, ExceptionMiddleware, ExcepcionUnitOfWork, ExcepcionValidacion, ExcepcionTransferenciaDAO{
+		//JSONObject conferencia = new JSONObject();
+		//RestConferenciaFachade fachada = new RestConferenciaFachade();
+		//fachada.buscarConferencia(conferencia);
+		return("menuView");
 	}
 
 }

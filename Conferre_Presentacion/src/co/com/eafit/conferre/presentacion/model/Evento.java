@@ -48,5 +48,17 @@ public class Evento {
 	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
+	public String asignarEvento(){ //throws ClassNotFoundException, InstantiationException, IllegalAccessException, ExceptionMiddleware, ExcepcionUnitOfWork, ExcepcionValidacion, ExcepcionTransferenciaDAO{
+		//JSONObject evento = new JSONObject();
+		//RestConferenciaFachade fachada = new RestConferenciaFachade();
+		//fachada.asignarEvento(evento);
+		return("menuView");
+	}
+	public String mostrarEvento(){ //throws ClassNotFoundException, InstantiationException, IllegalAccessException, ExceptionMiddleware, ExcepcionUnitOfWork, ExcepcionValidacion, ExcepcionTransferenciaDAO{
+		//JSONObject evento = new JSONObject();
+		//RestConferenciaFachade fachada = new RestConferenciaFachade();
+		//fachada.mostrarEvento(evento);
+		return("menuView");
+	}
 
 }
